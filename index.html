@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Santos às Cegas</title>
+</head>
+
+<body>
+    <div id="parallelogram"></div>
+
+    <section>
+        <form action="#" method="POST">
+            <header>
+                <h1>Agendar Passeio</h1>
+                <img src="logo.png" alt="Foto de um Usuario">
+            </header>
+
+            <fieldset id="nameLastName">
+                <div class="container">
+                    <input type="text" name="name" required autofocus>
+                    <label for="name">Nome</label>
+                </div>
+
+                <div class="container">
+                    <input type="text" name="lastname" required>
+                    <label for="lastname">Sobrenome</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="email">
+                <div class="container">
+                    <input type="email" name="email" required>
+                    <label for="email">E-mail</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="ageCellphone">
+                <div class="container">
+                    <input type="number" name="age" required>
+                    <label for="age">Idade</label>
+                </div>
+
+                <div class="container">
+                    <input type="tel" name="cellphone" required>
+                    <label for="cellphone">Telefone</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="terms">
+                <div>
+                    <div class="check">
+                        <input type="checkbox" name="consentimento" required>
+                        <label for="consentimento">Aceitar os termos de Consentimento</label>
+                    </div>
+
+                    <div class="check">
+                        <input type="checkbox" name="atestado" required>
+                        <label for="atestado">Me comprometo em trazer Atestado Médico</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button name="submit">Enviar os Dados</button>
+
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Ler termos de consentimento</a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Termos de Consentimento</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Este documento faz parte da documentação do projeto “Santos às Cegas” e tem o objetivo de apontar e firmar os entendimentos e concordâncias relativas as condicionantes dos trajetos que ocorrerão na ciclovia da Orla de Santos.</p>
+                            <p>A CONCORDÂNCIA DIGITAL FIRMA A VERACIDADE DAS INFORMAÇÕES PRESTADAS POR MIM, VONTADE PRÓPRIA E CONSENTIMENTO DE ESTAR DE ACORDO COM AS INFORMAÇÕES PRESTADAS NO PROJETO.</p>
+                            <p>Caso você tenha alguma resposta SIM no primeiro questionário (Prontidão para Atividade Física - 1 a 8) a sua participação estará condicionada a apresentação de um atestado médico no dia do seu trajeto. Nas três questões finais (9, 10 e 11), caso você responda "NÃO" está opção inviabiliza infelizmente sua participação.</p>
+                            <p>Tem dúvidas? Escreva para santosascegas@gmail.com</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
